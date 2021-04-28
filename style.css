@@ -22,10 +22,11 @@ width: 350px;
     font-size: 30px;
     text-align: center;
     color: white;
+    grid-template-rows: 1fr 1fr;
 }
 
 #hello {
-    font-size: 6rem;
+    font-size: 5rem;
     border-radius: 20px 20px 0px 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 0px;
@@ -34,12 +35,53 @@ width: 350px;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#name {
+#ndisplay {
+    background-color: white;
+    color: black;
+    font-family: cursive;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+#pdisplay {
     background-color: white;
     border-bottom: 20px solid red;
     border-radius: 0px 0px 20px 20px;
     color: black;
-    font-family: cursive;
-    font-size: 2rem;
-    padding: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-top: 0px;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+#name {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 70px;
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+    background-color: lightgreen;
+}
+#pronouns {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 70px;
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+    background-color: lemonchiffon;
+}
+#nameButton, #pronounButton {
+    background-color: rgb(204, 200, 200);
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
