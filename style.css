@@ -9,14 +9,14 @@ body, html {
 * {
     box-sizing: border-box;
 }
-.grid-container {
+#fullnametag {
 display: inline-grid;
 grid-template-columns: auto;
 padding: 10px;
 width: 350px;
 }
 
-.grid-item {
+.nametag {
     background-color: red;
     padding: 5px;
     font-size: 30px;
@@ -55,25 +55,15 @@ width: 350px;
     grid-row-start: 4;
     grid-row-end: 4;
 }
-#name {
+#name, #pronouns {
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-left: 70px;
     height: 30px;
-    width: 200px;
+    width: 150px;
     margin-top: 5px;
-    background-color: lightgreen;
-}
-#pronouns {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 70px;
-    height: 30px;
-    width: 200px;
-    margin-top: 5px;
-    background-color: lemonchiffon;
+    background-color: rgba(221, 162, 198, 0.733);
 }
 #nameButton, #pronounButton {
     background-color: rgb(204, 200, 200);
@@ -84,4 +74,37 @@ width: 350px;
     font-size: 10px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50px;
+    justify-content: inherit;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#rust-button {
+    background-color:sienna;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(255, 168, 96);
+}
+#rose-button {
+    background-color: rosybrown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(78, 0, 55);
+}
+#moss-button {
+    background-color:olivedrab;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(212, 255, 20);
+    letter-spacing: 1px;
+}
+#change {
+   margin-left: 60px;
+   margin-top: 40px;
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

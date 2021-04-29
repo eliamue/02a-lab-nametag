@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-        <div class="grid-container">
-            <div class="grid-item" id="hello">HELLO</div>
-            <div class="grid-item" id="mine-is">my name is</div>
-            <div class="grid-item" id="ndisplay">Name</div><br>
-            <div class="grid-item" id="pdisplay">Pronouns</div>
+        <div id="fullnametag">
+            <div class="nametag" id="hello">HELLO</div>
+            <div class="nametag" id="mine-is">my name is</div>
+            <div class="nametag" id="ndisplay">Name</div><br>
+            <div class="nametag" id="pdisplay">Pronouns</div>
         </div><br>
 
         <input id="name" placeholder="My name">
@@ -21,6 +21,12 @@
         <input id="pronouns" placeholder="My pronouns">
         <button id="pronounButton">Submit</button><br>
 
+        <p id="change">Change the color of the tag:</p>
+        <section id="colors"><br>
+            <button type="button" id="rust-button" onclick="button()";">Rust</button><br>
+            <button type="button" id="rose-button" onclick="rosey()";">Rose</button><br>
+            <button type="button" id="moss-button" onclick="mossy()";">Moss</button><br>
+        </section>
     <script type="module" src="app.js"></script>
 </body>
 </html>
